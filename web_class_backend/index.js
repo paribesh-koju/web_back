@@ -36,7 +36,7 @@ const PORT = process.env.PORT;
 
 //4. creating a test route or endpoint(
 app.get('/test', (req, res) => { //request pathauney ani kam garera back pathauney)
-    res.send("Test Api is Working...!")
+    res.status(200).send("Test Api is Working...!")
 }),
 
 app.get('/login', (req, res) => { //request pathauney ani kam garera back pathauney)
@@ -62,3 +62,7 @@ app.listen(PORT, () => {
 
 //API URl
 //http://localhost:5500/test
+
+
+//exporting for testing 
+module.exports = app;
